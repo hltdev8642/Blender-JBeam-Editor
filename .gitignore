@@ -5,3 +5,4 @@ tests/temp
 /*.zip
 tests/jbeam_import_modify_export/temp/*
 tests/vehicle_import_modify_export/temp/*
+ref

@@ -38,3 +38,15 @@ You can look at the current test suites to get an idea of how to create a test.
         * blender_jbeam_editor.zip
             * jbeam_editor (folder)
                 * *.py files
+
+## Legacy Exporter & NodesConnector (GPL Notice)
+
+The project integrates a legacy-style JBeam exporter and a NodesConnector operator adapted from the reference `io_mesh_jbeam` addon.
+
+These components are GPL-derived. Ensure that any redistribution or packaging of the combined work complies with the GNU GPL requirements (e.g., providing source, preserving notices, and license compatibility for aggregated distribution). If a non-GPL distribution is required, these legacy components (`legacy_export.py` and the `JBEAM_EDITOR_OT_nodes_connector` operator) can be removed without affecting the core modern JBeam editing system.
+
+Files/Features under GPL influence:
+- `jbeam_editor/legacy_export.py`
+- `JBEAM_EDITOR_OT_nodes_connector` (added to `operators.py`)
+
+These are deliberately isolated so future refactors can replace them with clean-room implementations if needed.
